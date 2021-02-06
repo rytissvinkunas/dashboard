@@ -1,0 +1,118 @@
+$main-blue: #0091dc; //Caerul
+$light-blue: #c8e6fa; //Sucaerul
+$dark-grey: #b6bec6; //Canal
+$light-grey: #e5e8eb; //Sucanul
+$main-black: #000000; //Aterul
+$main-white: #ffffff;
+$user-btn: #007bff; //buttons in user window
+$button-hover: #007bba; // button color when it is hover. Color picked from https://www.festo.com/us/en/login/  KS
+
+$footer-background: #f5f7fa;
+$footer-text: #99a9b4;
+
+$sticker-alert: #f89797;
+$sticker-warning: #fbc85a;
+$sticker-normal: #caf6b7;
+
+$sticker-alert-border: #ff0000;
+$sticker-warning-border: #ff7200;
+$sticker-normal-border: #008000;
+
+@font-face {
+    font-family: "MetaPro-Normal";
+    font-style: normal;
+    font-weight: 400;
+    src: local("MetaPro-Normal"),
+        url(../assets/fonts/MetaPro-Normal.otf) format("opentype");
+}
+@font-face {
+    font-family: "Roboto-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Roboto-Regular"),
+        url(../assets/fonts/Roboto-Regular.ttf) format("truetype");
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.festo-tooltip {
+  opacity: 1 !important;
+  background-color: $main-blue !important;
+  color: $main-white !important;
+  font-size: 1rem !important;
+  z-index: 1500 !important;
+}
+
+.festo-button {
+    background-color: $main-blue;
+    border: 0;
+    border-radius: 4px;
+    color: $main-white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    height: fit-content;
+    margin: 1px;
+    overflow: hidden;
+    padding: 10px 25px 11px;
+    position: relative;
+    text-decoration: none;
+    text-transform: capitalize;
+    white-space: nowrap;
+}
+.festo-button:hover {
+    background-color: $button-hover;
+}
+.festo-button-danger:hover {
+    background-color: #d5000d !important;
+}
+
+.festo-table {
+    table {
+        font-size: 1rem;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        width: 100%;
+        th,
+        td {
+            white-space: nowrap;
+            width: fit-content !important;
+        }
+        thead {
+            background-color: $dark-grey;
+            th {
+                padding-left: 5px;
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+                font-size: 1.1rem;
+            }
+        }
+        tbody {
+            td {
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+                padding-left: 5px;
+            }
+            tr:nth-child(odd) {
+                background-color: $light-grey;
+            }
+            tr:hover {
+                background-color: $light-blue;
+            }
+            input {
+                cursor: pointer;
+            }
+        }
+    }
+}
+.rotation-bar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: $dark-grey;
+}

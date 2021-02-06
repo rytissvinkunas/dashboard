@@ -1,0 +1,89 @@
+@import '../../assets/globalStyles.scss';
+@import '../users/User.scss';
+
+.portalsList{
+    h1{
+        font-size: 2rem;
+    }
+    .addButton{
+        padding-bottom: 10px;
+
+    }
+    table{  
+        font-size: 1rem;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        width: 100%;
+        th, td{
+                white-space: nowrap;
+                width: fit-content !important;
+        }
+        thead{
+            background-color: $dark-grey;
+            th{
+                padding-left: 5px;
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+                font-size: 1.2rem;
+            }  
+        }
+        tbody{            
+            td{
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+                padding-left: 5px;
+            }
+            .tooltip-wrap{
+                 position: relative;
+            }
+            .tooltip-wrap .tooltip-content{
+                background-color: $light-blue;
+                border: 1px solid $main-blue;
+                border-radius: 3px;
+                display: none;
+                position: absolute;
+                bottom: 5%;
+                left: 5%;
+                right: 5%;                
+                padding: .5em;
+                width: fit-content;
+                z-index: 1;
+            }
+            .tooltip-wrap:hover .tooltip-content{
+                display: block;
+            }
+            .remove-tooltip{
+                display: none;
+            }
+            tr:nth-child(odd)
+            {
+                background-color: $light-grey;
+            }
+            tr:hover{
+                background-color: $light-blue;
+            }
+            input{
+                cursor: pointer;
+            }
+        }        
+    }
+    .number-collumn{
+        width: auto;
+    }
+    .first-collumn{
+        width: 29%;
+    } 
+    .second-collumn{
+        width: 28%;
+    } 
+    .third-collumn{
+        width: 28%;
+    } 
+    .fourth-collumn{
+        width: 5%;
+    } 
+    .fifth-collumn{
+        width: 10%;
+    }
+}
+

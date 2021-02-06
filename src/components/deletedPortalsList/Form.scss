@@ -1,0 +1,205 @@
+@import "../../assets/globalStyles.scss";
+
+.test-modal {
+  z-index: 1500;
+}
+.properties-form {
+  input,
+  select,
+  textarea {
+    border: 1px solid $dark-grey !important;
+    border-radius: 3px;
+  }
+  input,
+  select,
+  textarea:disabled {
+    background-color: #fff;
+    color: #000;
+  }
+  .full-row {
+    width: 100%;
+    padding: 5px;
+  }
+
+  //very small screens
+  @media (max-width: 376px) {
+    .festo-button:nth-child(1) {
+      width: 100%;
+    }
+    .festo-button:nth-child(2),
+    .festo-button:nth-child(3) {
+      width: 49%;
+    }
+  }
+
+  //mobile phones and small tablets
+  @media (max-width: 767px) {
+    label {
+      width: 100%;
+    }
+    input,
+    select {
+      width: 100%;
+    }
+    .parameters-textArea {
+      textarea {
+        resize: none;
+        height: 200px;
+        width: 100%;
+      }
+    }
+    .checkbox {
+      //text-align:left;
+      label {
+        width: fit-content;
+        float: left;
+      }
+      input {
+        position: relative;
+        width: fit-content;
+        float: left;
+        margin-top: 6.5px;
+        margin-left: 10px;
+      }
+    }
+    .margin-on-small-screens {
+      margin-top: 50px;
+    }
+  }
+  //bigger tablets
+  @media (min-width: 768px) and (max-width: 991px) {
+    label {
+      width: 25%;
+    }
+    input,
+    select {
+      float: right;
+      width: 75%;
+    }
+    .parameters-textArea {
+      height: 215px;
+      textarea {
+        float: right;
+        resize: none;
+        height: 200px;
+        width: 75%;
+      }
+    }
+    .checkbox {
+      display: inline-block;
+      label {
+        width: 25%;
+        float: left;
+      }
+      input {
+        position: relative;
+        width: fit-content;
+        float: left;
+        margin-top: 6.5px;
+      }
+    }
+  }
+  //bigger screens
+  @media (min-width: 992px) and (max-width: 1365px) {
+    label {
+      width: 20%;
+    }
+    input,
+    select {
+      float: right;
+      width: 80%;
+    }
+    .parameters-textArea {
+      height: 215px;
+      textarea {
+        float: right;
+        resize: none;
+        height: 200px;
+        width: 80%;
+      }
+    }
+    .checkbox {
+      display: inline-block;
+      label {
+        width: 20%;
+        float: left;
+      }
+      input {
+        position: relative;
+        width: fit-content;
+        float: left;
+        margin-top: 6.5px;
+      }
+    }
+  }
+
+  @media (min-width: 1366px) and (max-width: 1920px) {
+    label {
+      width: 15%;
+    }
+    input,
+    select {
+      float: right;
+      width: 85%;
+      border-color: #000;
+    }
+    .parameters-textArea {
+      height: 215px;
+      textarea {
+        float: right;
+        height: 200px;
+        width: 85%;
+        resize: none;
+        border-color: #000;
+      }
+    }
+    .checkbox {
+      display: inline-block;
+      label {
+        width: 15%;
+        float: left;
+      }
+      input {
+        position: relative;
+        width: fit-content;
+        float: left;
+        margin-top: 6.5px;
+      }
+    }
+  }
+
+  @media (min-width: 1921px) {
+    label {
+      width: 10%;
+    }
+    input,
+    select {
+      float: right;
+      width: 90%;
+      border-color: #000;
+    }
+    .parameters-textArea {
+      height: 215px;
+      textarea {
+        float: right;
+        height: 200px;
+        width: 90%;
+        resize: none;
+        border-color: #000;
+      }
+    }
+    .checkbox {
+      display: inline-block;
+      label {
+        width: 10%;
+        float: left;
+      }
+      input {
+        position: relative;
+        width: fit-content;
+        float: left;
+        margin-top: 6.5px;
+      }
+    }
+  }
+}

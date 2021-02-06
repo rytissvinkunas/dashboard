@@ -1,0 +1,95 @@
+@import '../../assets/globalStyles.scss';
+.sticker {
+    background-color: $sticker-normal;
+    border: 1px solid $sticker-normal-border;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    max-width: 255px;
+    min-width: 255px;
+    min-height: 230px;
+    max-height: 250px;
+    padding: 10px;
+    .spiner {
+        width: 1rem;
+        height: 1rem;
+        border-bottom: 2px solid $main-black;
+        border-top: 2px solid $main-black;
+        border-left: 2px solid $main-black;
+    }
+    .tooltip-wrap {
+        position: relative;
+    }
+    .tooltip-wrap .tooltip-content {
+        background-color: $light-blue;
+        border: 1px solid $main-blue;
+        border-radius: 3px;
+        display: none;
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+        right: 5%;
+        padding: 0.2em;
+        word-wrap: break-word;
+        z-index: 1;
+        max-width: 350px;
+        max-height: 150px;
+        span {
+            border-bottom: none;
+            margin: 0;
+            padding: 0;
+        }
+    }
+    .tooltip-wrap:hover .tooltip-content {
+        display: block;
+    }
+    .remove-tooltip {
+        display: none;
+    }
+    span {
+        display: block;
+        font-size: 1.2rem;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        font-style: italic;
+        font-weight: bolder;
+        word-wrap: break-word;
+        border-bottom: 1px solid $sticker-normal-border;
+    }
+    strong {
+        font-family: Roboto-Regular, Arial, sans-serif;
+        font-size: 1em;
+    }
+    &__alert {
+        background-color: $sticker-alert;
+        border: 1px solid $sticker-alert-border;
+        span {
+            border-bottom: 1px solid $sticker-alert-border;
+            // padding-top: 10px;
+        }
+    }
+    &__warning {
+        background-color: $sticker-warning;
+        border: 1px solid $sticker-warning-border;
+        span {
+            border-bottom: 1px solid $sticker-alert-border;
+            //  padding-top: 10px;
+        }
+    }
+    &__loading {
+        background-color: $light_blue;
+        color: $main-white;
+        border: 1px solid $main-blue;
+    }
+}
+.blink {
+    animation: blinker 1s step-start infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+.inline {
+    display: inline;
+}

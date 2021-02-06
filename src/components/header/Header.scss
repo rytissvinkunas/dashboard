@@ -1,0 +1,28 @@
+@import '../../assets/globalStyles.scss';
+.header{
+    background-color: $main-white;
+    border-bottom: 1px solid $main-blue;
+    height: 64px;
+    p{
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .displayNoneElement992px{
+        display: none;
+    }
+}
+
+@media (max-width: 580px) {
+    .displayNoneElement580px{
+        text-align: left!important;
+    }
+}
+
+@media (max-width: 580px) {
+    .displayNoneElement580px{
+        text-align: left!important;
+    }
+}

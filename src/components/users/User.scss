@@ -1,0 +1,62 @@
+@import '../../assets/globalStyles.scss';
+.delete-modal {
+    font-family: MetaPro-Normal, Arial, sans-serif;
+    color: $main-black;
+    font-size: 1em;
+    font-weight: 400;
+    strong {
+        font-size: 1.15em;
+    }
+}
+.edit-modal {
+    font-family: MetaPro-Normal, Arial, sans-serif;
+    color: $main-black;
+    font-size: 1em;
+    font-weight: 400;
+    input,
+    select {
+        border: 1px solid $dark-grey !important;
+        border-radius: 3px;
+        width: 100%;
+    }
+    strong {
+        font-size: 1.15em;
+    }
+    @media (min-width: 768px) {
+        .edit-line {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            input {
+                width: 80%;
+                margin-bottom: 0;
+            }
+            .checkbox-input {
+                width: auto;
+                margin-top: 6px;
+                margin-right: 78%;
+            }
+        }
+        .warning-text {
+            margin-left: 20%;
+            text-align: center;
+        }
+    }
+    @media (max-width: 768px) {
+        .edit-line__small {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            input {
+                width: 65%;
+                margin-bottom: 0;
+            }
+            .checkbox-input {
+                width: auto;
+                margin-left: 20px;
+                margin-top: 6px;
+                margin-right: 63%;
+            }
+        }
+    }
+}

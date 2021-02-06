@@ -1,0 +1,59 @@
+@import '../../assets/globalStyles.scss';
+
+.menuIcon{
+    font-size: 2rem;
+    font-weight: 900;
+    text-decoration: none;
+    color: $dark-grey;
+    border: 1px solid $dark-grey;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    border-radius: 5px;
+    &:hover{
+        text-decoration: none;
+        color: $main-blue;
+        border: 1px solid $main-blue;
+    }
+    &:focus {outline:none;}
+   
+}
+
+.listStyle{
+    
+    position: absolute;
+    background-color: $main-white;
+    border: 1px solid $dark-grey;
+    border-radius: 5px;
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    width: 200px;
+    li{
+        margin: 10 0 10 10px;
+        border-bottom: 1px solid $dark-grey;
+    }
+}
+
+.dontShow{
+    display: none!important;
+}
+
+.buttonDesign{
+    border:none;
+    width: 100%;
+    text-align: left;
+    background-color: $main-white;
+    padding: 10px;
+    &:hover {
+        background-color: $light-grey;
+        border-radius: 2px;
+    }
+    &:active {
+        background-color: $light-grey;
+        transform: translateY(2px);
+        border-radius: 2px;
+        outline: none;
+    }
+    &:focus {outline:none;}
+}

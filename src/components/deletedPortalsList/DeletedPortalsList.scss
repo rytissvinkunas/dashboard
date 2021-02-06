@@ -1,0 +1,46 @@
+@import "../../assets/globalStyles.scss";
+
+.delete-modal {
+    font-family: MetaPro-Normal, Arial, sans-serif;
+    color: $main-black;
+    font-size: 1em;
+    font-weight: 400;
+    strong {
+        font-size: 1.15em;
+    }
+}
+.font-modal {
+    font-family: MetaPro-Normal, Arial, sans-serif;
+    color: $main-black;
+    font-size: 1em;
+    font-weight: 400;
+}
+.deleted-portals-list {
+    .addButton {
+        padding-bottom: 10px;
+    }
+    .number-collumn {
+        width: auto;
+    }
+    .service-name-collumn {
+        width: 20%;
+    }
+    .type-collumn {
+        width: 6%;
+    }
+    .url-collumn {
+        width: 20%;
+    }
+    .email-collumn {
+        width: 20%;
+    }
+    .check-interval-collumn {
+        width: 6%;
+    }
+    .threshold-collumn {
+        width: 10%;
+    }
+    .maintenance-collumn {
+        width: 18%;
+    }
+}
